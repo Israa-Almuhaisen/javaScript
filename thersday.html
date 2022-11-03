@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<meta charset=utf-8 />
+<title>JavaScript task1 </title>
+</style> 
+</head>
+<body>
+<form>
+<input type="text" id="firstNumber" />
+<input type="text" id="opBox" />
+<input type="text" id="secondNumber" /><br>
+<input type="button" onClick="addBy()" Value="Plus+" />
+<input type="button" onClick="subtractBy()" Value="Minus-" />
+<input type="button" onClick="multiplyBy()" Value="Multiply*" />
+<input type="button" onClick="divideBy()" Value="Divide/" />
+<input type="button" onClick="operation(document.getElementById('opBox').value);" Value="TryMe/" />
+</form>
+<p>The Result is : <span id="result"></span>
+</p>
+
+<script>
+function addBy()
+{
+        num1 = document.getElementById("firstNumber").value;
+        num2 = document.getElementById("secondNumber").value;
+        document.getElementById("result").innerHTML = parseFloat(num1) + parseFloat(num2);
+}
+function subtractBy()
+{
+        num1 = document.getElementById("firstNumber").value;
+        num2 = document.getElementById("secondNumber").value;
+        document.getElementById("result").innerHTML = num1 - num2;
+}
+function multiplyBy()
+{
+        num1 = document.getElementById("firstNumber").value;
+        num2 = document.getElementById("secondNumber").value;
+        document.getElementById("result").innerHTML = num1 * num2;
+}
+function divideBy()
+{
+        num1 = document.getElementById("firstNumber").value;
+        num2 = document.getElementById("secondNumber").value;
+        document.getElementById("result").innerHTML = num1 / num2;
+}
+
+function operation(operation)
+{
+        num1 = parseFloat(document.getElementById("firstNumber").value);
+        num2 = parseFloat(document.getElementById("secondNumber").value);
+        result = "";
+        let x = prompt("Please enter the first number", "1st Number");
+
+        // operation = document.getElementById("opBox").value;
+
+        if (operation == "+"){result = num1 + num2;}
+        else if (operation == "-"){result = num1 - num2;}
+        else if (operation == "*"){result = num1 * num2;}
+        else if (operation == "/"){result = num1 / num2;}
+        else if (operation == "mod"){result = num1 % num2;}
+        else if (operation == "^"){result = num1 ** num2;}
+        else{alert("Invalid Operator");}
+
+
+        document.getElementById("result").innerHTML = result;        
+}
+</Script>
+</body>
+</html>
