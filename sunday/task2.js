@@ -8,11 +8,12 @@ for(i=1;i<5;i++){
     console.log(y) ;
 }
 
+// let y=1;
+
 // for(i=1;i<5;i++){
-//     y ="";
-//     for( j=0; j<i ; j++) {
-//         y += j+i;
-//         y += " "
+  
+//     for( j=1; j<=i ; j++) {
+//         document.write(y++);
 //     }  
-//     console.log(y) ;
+//     \n
 // }
