@@ -39,7 +39,6 @@ Create an array represents your:
 Create a function called firstOfArray
 that take an array as a parameter
 and return the first element in an array
-
 Ex: firstOfArray([1,4,5]) => 1
 Ex: firstOfArray(["t","u","g","x"]) => "t"
 */
@@ -54,7 +53,6 @@ Ex: firstOfArray(["t","u","g","x"]) => "t"
 // Create a function called lastOfArray
 // that take an array as a parameter
 // and return the first element in an array
-
 // Ex: lastOfArray([1,4,5]) => 5
 // Ex: lastOfArray(["t","u","g","x"]) => "x"
 
@@ -63,7 +61,6 @@ Ex: firstOfArray(["t","u","g","x"]) => "t"
 /*
 6
 Using console make this array to be like this one (push, unshift, shift, pop)
-
 var array = [0,5,7,9]
 => [1,3,4,6,8,9,10]
 */
@@ -85,9 +82,8 @@ var array = [0,5,7,9]
 /*
 7
 Using the console try to figure out what the thing thats (push, unshift, shift, pop) return to you
+var array2 = [5,9,-7,3.5]*/
 
-var array2 = [5,9,-7,3.5]
-*/
 // var array2 =[5,9,-7,3.5];
 // console.log(array2);
 // array2.push(3);
@@ -111,6 +107,19 @@ and return the two middle elemnt in an array if it is have an even elemnets
 Ex: middleOfArray([1,4,5]) => 4
 Ex: middleOfArray(["t","u","g","x"]) =>"u and g"
 */
+
+function middleOfArray(array11){
+    var n= array11.length;
+    var f= n/2;
+    if (n %2 == 0){
+        var y =array11[n];
+        return y;
+    }
+    // else{
+    //     var y= array11[]
+    // }
+}
+console.log(middleOfArray(["a","b","d,e"]));
 
 
 /*
