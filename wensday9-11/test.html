@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>  
+
+<style>
+  .boxes{
+    border: 2px solid black;
+    width: 30%;
+    padding-top: 0;
+    margin-top: 30px;
+  }
+
+.header{
+  background-color: rgba(207, 204, 204, 0.767);
+  font-weight: bolder;
+  font-size: 2.4em;
+  margin-top: -1px;
+}
+
+.boxes p{
+  padding-left: 8px;
+  display: block;
+}
+
+.boxes a{
+  padding-left: 8px;
+  padding-bottom:100px;
+}
+
+
+
+</style>
+
+</head>
+
+<body>
+   <!-- -------------------------------task1--------------------------------------------- -->
+
+ <h1  style= " border: 3px solid  black ;"  id="hcolor"> hello world </h1> 
+
+ 
+ <!-- -------------------------------task2--------------------------------------------- -->
+     
+    <div   style=" border: 2px solid red; height: 25vh; width: 30vw; background-color: rgb(12, 11, 13);"   id="boxdiv"></div>
+    
+    <br>
+    
+    <div   style=" border: 2px solid red; height: 25vh; width: 30vw; background-color: rgb(7, 6, 7);"   id="boxdiv2"></div> 
+    
+
+<!-- --------------------task3---------------------------------------------------------------------------- -->
+   
+
+ <select style="display:block;" id="selectcountry" onchange="load2()">
+          <option value= "./photo/1000_F_434728286_OWQQvAFoXZLdGHlObozsolNeuSxhpr84.jpg"  style= "display: block;height:30vh ;width:30vw">select</option>
+          <option  id= "jor" value="./photo/Flag_of_Jordan.png" >Jordan</option>         
+           <option  id= "de" value="./photo/flag_of_germany.png">Germany</option>
+          <option  id= "fra" value="./photo/France.jpg">France</option>
+          <option  id= "it" value="./photo/flag-of-italy.png">Italy</option>
+          <option  id= "gr" value="">Greece</option>
+        </select>
+
+        <img  id="imgflag"  src="./photo/1000_F_434728286_OWQQvAFoXZLdGHlObozsolNeuSxhpr84.jpg" width="400px" height="200px"> 
+
+
+     
+ <!-- --------------------task4---------------------------------------------------------------------------- -->
+
+<div style="border: 2px solid black; width: 600px;">
+  <h2 style="background-color:rgb(191, 184, 184); margin-top: -1px;" >What Is Lorem Ipsum?
+  <a  stlye="margin-left:60px;" id="showbuttom" href="#" onclick="funshow('showbuttom','para','hidebuttom')">Show</a> </h2>
+  <p id="para" style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos alias nostrum, officia provident doloremque dignissimos ab deleniti temporibus aspernatur laudantium eveniet nemo! Ducimus est ad quo, beatae ex veniam eaque. Quidem, excepturi? Voluptatibus cumque fugiat eveniet nostrum aperiam. Culpa magnam inventore suscipit repudiandae distinctio voluptatibus, ut dolorum a quae repellendus.</p>
+  <a style="display: none;" id="hidebuttom" href="#" onclick="funhide('showbuttom','para','hidebuttom')">Hide</a>
+</div>
+
+
+  <div style="border: 2px solid black; width: 600px;">
+    <h2 style="background-color:rgb(191, 184, 184); margin-top: -1px;" >What Is Lorem Ipsum?
+    <a  stlye="margin-left:60px;" id="showbuttom2" href="#" onclick="funshow('showbuttom2','para2','hidebuttom2')">Show</a> </h2>
+    <p id="para2" style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos alias nostrum, officia provident doloremque dignissimos ab deleniti temporibus aspernatur laudantium eveniet nemo! Ducimus est ad quo, beatae ex veniam eaque. Quidem, excepturi? Voluptatibus cumque fugiat eveniet nostrum aperiam. Culpa magnam inventore suscipit repudiandae distinctio voluptatibus, ut dolorum a quae repellendus.</p>
+    <a style="display: none;" id="hidebuttom2" href="#" onclick="funhide('showbuttom2','para2','hidebuttom2')">Hide</a>
+  </div>
+
+  <div style="border: 2px solid black; width: 600px;">
+    <h2 style="background-color:rgb(191, 184, 184); margin-top: -1px;" >Where does it come from?
+    <a  stlye="margin-left:60px;" id="showbuttom3" href="#" onclick="funshow('showbuttom3','para3','hidebuttom3')">Show</a> </h2>
+    <p id="para3" style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos alias nostrum, officia provident doloremque dignissimos ab deleniti temporibus aspernatur laudantium eveniet nemo! Ducimus est ad quo, beatae ex veniam eaque. Quidem, excepturi? Voluptatibus cumque fugiat eveniet nostrum aperiam. Culpa magnam inventore suscipit repudiandae distinctio voluptatibus, ut dolorum a quae repellendus.</p>
+    <a style="display: none;" id="hidebuttom3" href="#" onclick="funhide('showbuttom3','para3','hidebuttom3')">Hide</a>
+  </div>
+
+
+
+
+   <script src="./test.js"></script> 
+</body>
+</html>

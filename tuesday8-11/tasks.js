@@ -112,7 +112,8 @@ function middleOfArray(array11){
     var n= array11.length;
     var f= n/2;
     if (n %2 == 0){
-        var y =array11[n];
+        var y =;
+        var j=array11[n]
         return y;
     }
     // else{

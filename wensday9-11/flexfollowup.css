@@ -1,0 +1,51 @@
+
+
+
+
+.smallContainer {
+    background-color: yellow;
+    margin: 5px;
+    padding: 25px;
+    width: 500px;
+}
+
+.student {
+    margin: 15px;
+}
+
+
+ Flex-direction : row reverse - coloumn - column reverse
+Flex-wrap : nowrap - wrap */
+
+
+ #container {
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+
+ .studentContainer {
+    display: flex;
+}  */
+
+
+/* Justify-content : space around - space between - space evenly - end -  center  */
+
+
+
+
+ .smallContainer {
+    background-color: yellow;
+    margin: 25px;
+    padding: 25px;
+    width: 200px;
+}
+
+
+#container {
+    display: flex;
+    justify-content: ;
+} 
+
+
+
