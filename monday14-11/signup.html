@@ -1,0 +1,65 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;
+            padding: 5%;
+            margin: 0px;
+        }
+        #form{
+        
+            text-align: center;
+            margin: 25%;
+            border:2px solid black;
+            width: 50%;
+            background-color: rgb(201, 142, 142);
+        }
+
+        #btn{
+            color: wheat;
+            background-color: rgba(111, 59, 42, 0.688);
+            border-radius: 20% ;
+            padding: 3.5%;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <form id="form">
+        <label>first name: <input type="text" id="take" /></label><br>
+        <label>Email <input type="email" id="email" /></label><br>
+        <label>password: <input type="password" id="password" /></label><br>
+        <label>number: <input type="text" id="phone" /></label><br>
+        <br />
+        <button id="btn" type="submit">submit</button>
+      </form>
+      <a href="login.html">if you have account</a>
+
+
+      <script>
+        let take = document.getElementById('take')
+        let pass = document.getElementById("password")
+        let form = document.getElementById('form')
+        // console.log(take);
+        // console.log(pass);
+        // console.log(form);
+        form.addEventListener('submit', whenSubmit)
+        let users = JSON.parse(localStorage.getItem('userData')) || [];
+
+            //  users = [{}{}{}{}] || []
+function whenSubmit(e){
+    e.preventDefault();
+    let user = { name:take.value, pass:pass.value,}
+    users.push(user)
+    localStorage.setItem('userData' , JSON.stringify(users))
+}   
+      </script>
+</body>
+</html>
